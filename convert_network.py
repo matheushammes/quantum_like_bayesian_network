@@ -92,6 +92,7 @@ def file_scrapper(file):
             for i in individual_probability:
                 mini_list.append(i)
                 probabilities[index] = mini_list
+        print("pre process probabilities", probabilities)
 
         # iterate through all lists and add information to dictionaries
         for dicts, name, prob, state, var, node in zip(dictionaries_list.copy(), variable_names, probabilities, cardinality,

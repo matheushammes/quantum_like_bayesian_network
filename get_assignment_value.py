@@ -31,6 +31,7 @@ def get_assignment_value(node_a, node_b): # we are returning proper nodes on thi
     card_prod_range = list(range(int(np.prod(comb.cardinality))))
     card_prod_range = [i+1 for i in card_prod_range]
 
+
     assignments = []
     for i in card_prod_range:
         assignments.append(index_to_assignment(i, comb.cardinality))

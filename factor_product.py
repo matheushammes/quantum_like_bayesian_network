@@ -63,7 +63,9 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
 
         idx = comb.probabilities.index(i)
         prob_a = float(node_a.probabilities[index_a[idx]])
+        #print("prob_a", prob_a)
         prob_b = float(node_b.probabilities[index_b[idx]])
+        #print("prob_b", prob_b)
         comb.probabilities[idx] = prob_a * prob_b
 
     return comb, assignments

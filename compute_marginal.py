@@ -1,6 +1,6 @@
 import numpy as np
 from observe_evidence import observe_evidence
-from compute_joint_distribution import JDP_creator
+from compute_joint_distribution import JPD_creator
 from factor_marginalization import factor_marginalization
 
 """" ComputeMarginal Computes the marginal over a set of given variables
@@ -9,18 +9,22 @@ from factor_marginalization import factor_marginalization
 
    It returns a Factor containing the marginal over variables V
    V is a vector containing the variables in the marginal e.g. [1 2 3] for
-     X_1, X_2 and X_3.
+    X_1, X_2 and X_3.
     F is a Node Object containing the factors defining the distribution
     E is an N-by-2 matrix, each row being a variable/value pair. 
      Variables are in the first column and values are in the second column.
      If there is no evidence, pass in the empty matrix [] for E """
 
-def computeMarginal(v,f,e):
+def compute_marginal(V,F,E):
 
-    f = observe_evidence(f, e)
-    joint = JDP_creator(f)
-    joint.probabilities = joint.probabilities/sum(joint.probabilities)
-    m = factor_marginalization((joint, np.setdiff1d(joint.variables, v)))
-    m.probabilities = m.probabilities/sum(m.probabilities)
+    F = observe_evidence(F, E)
+    jpd, assignments_list = JPD_creator(F)
+    np.set_printoptions(precision=4, suppress=True)
+    print("here joint marginal",jpd.probabilities)
+    print("here ass marginal", assignments_list)
+    m = factor_marginalization(jpd, np.setdiff1d(jpd.variables, V))
+    print("this m", m.variables, m.probabilities)
+    norm = np.sum(m.probabilities)
+    m.probabilities = np.divide(m.probabilities, norm)
 
     return m

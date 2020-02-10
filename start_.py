@@ -1,10 +1,13 @@
-from compute_joint_distribution import JDP_creator
+from compute_joint_distribution import JPD_creator
 import numpy as np
 import convert_network
 from Nodes_ import Node
 import os
 from pprint import pprint
 from observe_evidence import observe_evidence
+from compute_marginal import compute_marginal
+
+# TODO: normalize all values when changed to 0
 
 """ 
 
@@ -34,10 +37,10 @@ def read_network(path, isquantum):
         variables.reverse()
         variables.insert(0, variables[len(variables) - 1])
         variables = variables[0:(len(variables) - 1)]
-        if isquantum:
-            probabilities = [np.sqrt(float(i)) for i in values.get(name)["val"]]
-        else:
-            probabilities = values.get(name)["val"]
+        # if isquantum:
+        #     probabilities = [np.sqrt(float(i)) for i in values.get(name)["val"]]
+        # else:
+        probabilities = [float(i) for i in values.get(name)["val"]]
         cardinality = []
         cardinality.append(values.get(name)["card"])
         for var in variables[1:len(variables)]:
@@ -72,29 +75,32 @@ if __name__ == "__main__":
 
     nodes_list = check_input()
     print(nodes_list)
+    show_factor(nodes_list)
     print("reminder")
-    [print("node name:", Node.get_names(i), "node index:", nodes_list.index(i), "states:", i.cardinality[0]) for i in
+    [print("node name:", Node.get_names(i), "node index:", nodes_list.index(i), "states:", i.cardinality[0], "\n probs:", Node.get_probabilities(i)) for i in
      nodes_list]
 
     node = input("Would you like to set any node to a certain state? Input node index here")
 
     if node != "":
         state = input("Now input the state")
-        observe_evidence(nodes_list, [[int(node), int(state)]])
-        print("THATS TTT")
-        norm = sum(t.probabilities.astype(float))
-        t.probabilities = np.divide(t.probabilities.astype(float), norm)
-        t.probabilities = list(t.probabilities)
-        print("LISSTS")
+        compute_marginal([int(node)], nodes_list,[[int(node), int(state)]])
         show_factor(nodes_list)
-        jpd, assignments_list = JDP_creator(nodes_list)
+        jpd, assignments_list = JPD_creator(nodes_list)
         np.set_printoptions(precision=4, suppress=True)
         print("JOINT PROBABILITIES")
-        pprint.pprint(jpd.probabilities)
+        norm = np.sum(jpd.probabilities)
+        jpd.probabilities = np.divide(jpd.probabilities, norm)
+        pprint(jpd.probabilities)
+        print("here jpd type, below jpd", type(jpd), type(assignments_list))
+        pprint(jpd, assignments_list)
         print(jpd.get_names(), "\n", jpd.node_info())
+
     else:
         show_factor(nodes_list)
-        jpd, assignments_list = JDP_creator(nodes_list)
+        jpd, assignments_list = JPD_creator(nodes_list)
         np.set_printoptions(precision=4, suppress=True)
         print("JOINT PROBABILITIES, {}".format(jpd.get_names()))
+        norm = np.sum(jpd.probabilities)
+        jpd.probabilities = np.divide(jpd.probabilities, norm)
         pprint(jpd.probabilities)

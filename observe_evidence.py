@@ -42,24 +42,16 @@ def observe_evidence(F, evidence): # F is the list of factors and evidence says 
                 for comb in assignments:
                     print("dis comb", comb)
 
-                    # print("var_index", var_index)
-                    # # you got to iterate thru alll the values here
-                    # indices_tbc = np.argwhere(int(comb[var_index]) != value)
-                    # print("value type", type(value))
-                    # print("each in comb", type(comb[var_index]))
-                    # print("tbc",indices_tbc)
-                    # print("here the vals:", node.probabilities)
-                    # # the problem be here and only here.
-                    # # we might need to add some checking before we wnter thi loop.
-                    # new_node = [print("here we go",node.probabilities[i]) for i[0] in indices_tbc]
                     if comb[var_index] != value:
-                        # print("here is return of npwhere", np.where(assignments == np.array(np.array(comb))))
                         node.probabilities[index] = 0
                         index += 1
                     else:
                         index += 1
-                        continue
-                    print(node.probabilities)
+                norm = sum(node.probabilities)
+                node.probabilities = np.divide(node.probabilities, norm)
+
+
+
 
     return F
 

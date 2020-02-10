@@ -44,4 +44,6 @@ def  factor_marginalization(a,v): # A is a factor with var, card and val; V is a
     b.probabilities = list(b.probabilities)
     for i in range(len(index_b)):
         b.probabilities[index_b[i]] = float(b.probabilities[index_b[i]]) + float(a.probabilities[i])
+
+    print("we got here and this is b", b)
     return b
