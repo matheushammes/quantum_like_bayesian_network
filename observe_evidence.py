@@ -18,14 +18,14 @@ from Nodes_ import Node
 
 def observe_evidence(F, evidence): # F is the list of factors and evidence says what is true and what is not
 
-    print("this is the evidence value entered")
-    print(evidence)
-    print("dis F")
-    print(F)
+    # print("this is the evidence value entered")
+    # print(evidence)
+    # print("dis F")
+    # print(F)
     for each in evidence:
         variable = each[0]
         value = each[1]
-        print("we checking for this one here", variable)
+        # print("we checking for this one here", variable)
         # open Factor to see if it contains said node
 
         for node in F:
@@ -37,21 +37,16 @@ def observe_evidence(F, evidence): # F is the list of factors and evidence says 
                 for i in card_prod_range:
                     assignments.append(index_to_assignment(i, node.cardinality))
                 assignments = np.array(assignments)
-                print(assignments)
+                # print(assignments)
                 index = 0
                 for comb in assignments:
-                    print("dis comb", comb)
+                    # print("dis comb", comb)
 
                     if comb[var_index] != value:
                         node.probabilities[index] = 0
                         index += 1
                     else:
                         index += 1
-                norm = sum(node.probabilities)
-                node.probabilities = np.divide(node.probabilities, norm)
-
-
-
 
     return F
 

@@ -31,6 +31,10 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
     card_prod_range = list(range(int(np.prod(comb.cardinality))))
     card_prod_range = [i+1 for i in card_prod_range]
 
+    print("this is inside factor_product, here is all the info about the newly created node:")
+    print("new name", comb.name)
+    print("variables", comb.variables)
+    print("cardinality", comb.cardinality)
     assignments = []
     for i in card_prod_range:
         assignments.append(index_to_assignment(i, comb.cardinality))
@@ -59,13 +63,31 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
 
     index_b = assignment_to_index(juntosB, node_b.cardinality)
 
-    for i in comb.probabilities:
+    print("inside factor_product, these are the values for the first node, a.")
+    print(node_a.probabilities)
+    print("indexes of A")
+    print(index_a)
+    print("map_a")
+    print(map_a)
+    print("now, node b")
+    print(node_b.probabilities)
+    print("indexes of B")
+    print(index_b)
+    print("map_b")
+    print(map_b)
 
-        idx = comb.probabilities.index(i)
-        prob_a = float(node_a.probabilities[index_a[idx]])
-        #print("prob_a", prob_a)
-        prob_b = float(node_b.probabilities[index_b[idx]])
-        #print("prob_b", prob_b)
-        comb.probabilities[idx] = prob_a * prob_b
+
+    # change the for loop for a idx_a's length
+    for i in range(len(index_a)):
+
+        # TODO fix indexing here, it seems like its giving all the same values no matter what
+        print("i", i)
+        print("index used for a",index_a[i])
+        prob_a = float(node_a.probabilities[index_a[i]])
+        print("prob_a", prob_a)
+        prob_b = float(node_b.probabilities[index_b[i]])
+        print("index used for b", index_b[i])
+        print("prob_b", prob_b)
+        comb.probabilities[i] = prob_a * prob_b
 
     return comb, assignments
