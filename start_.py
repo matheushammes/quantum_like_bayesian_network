@@ -84,14 +84,15 @@ if __name__ == "__main__":
 
     if node != "":
         state = input("Now input the state")
-        nodes_list = observe_evidence(nodes_list,[[int(node), int(state)]])
-        show_factor(nodes_list)
-        jpd, assignments_list = JPD_creator(nodes_list)
-        np.set_printoptions(precision=7, suppress=True)
-        print("JOINT PROBABILITIES, {}".format(jpd.get_names()))
-        norm = np.sum(jpd.probabilities)
-        jpd.probabilities = np.divide(jpd.probabilities, norm)
-        pprint(jpd.probabilities)
+        new_node = compute_marginal([2], nodes_list, [[int(node), int(state)]])
+        # nodes_list = observe_evidence(nodes_list,[[int(node), int(state)]])
+        print(new_node.node_info())
+        # jpd, assignments_list = JPD_creator(nodes_list)
+        # np.set_printoptions(precision=7, suppress=True)
+        # print("JOINT PROBABILITIES, {}".format(jpd.get_names()))
+        # norm = np.sum(jpd.probabilities)
+        # jpd.probabilities = np.divide(jpd.probabilities, norm)
+        # pprint(jpd.probabilities)
 
     else:
         show_factor(nodes_list)

@@ -19,6 +19,11 @@ def compute_marginal(V,F,E):
 
     F = observe_evidence(F, E)
     jpd, assignments_list = JPD_creator(F)
+    norm_a = np.sum(jpd.probabilities)
+    print("values of jpd probsss", jpd.probabilities)
+    print("norma", norm_a)
+    jpd.probabilities = np.divide(jpd.probabilities, norm_a)
+
     m = factor_marginalization(jpd, np.setdiff1d(jpd.variables, V))
     print("this m", m.variables, m.probabilities)
     norm = np.sum(m.probabilities)
