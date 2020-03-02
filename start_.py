@@ -74,25 +74,28 @@ def show_factor(factor):
 if __name__ == "__main__":
 
     nodes_list = check_input()
-    print(nodes_list)
+    # print(nodes_list)
     show_factor(nodes_list)
     print("reminder")
     [print("node name:", Node.get_names(i), "node index:", nodes_list.index(i), "states:", i.cardinality[0], "\n probs:", Node.get_probabilities(i)) for i in
      nodes_list]
 
-    node = input("Would you like to set any node to a certain state? Input node index here")
+    node = input("Would you like to set any node to a certain state? Input node index here\n press enter if you dont want it")
 
     if node != "":
         state = input("Now input the state")
-        new_node = compute_marginal([2], nodes_list, [[int(node), int(state)]])
-        # nodes_list = observe_evidence(nodes_list,[[int(node), int(state)]])
-        print(new_node.node_info())
-        # jpd, assignments_list = JPD_creator(nodes_list)
-        # np.set_printoptions(precision=7, suppress=True)
-        # print("JOINT PROBABILITIES, {}".format(jpd.get_names()))
-        # norm = np.sum(jpd.probabilities)
-        # jpd.probabilities = np.divide(jpd.probabilities, norm)
-        # pprint(jpd.probabilities)
+        marginal = input("Compute Marginal?\n press enter if you dont want it")
+        if marginal != "":
+            new_node = compute_marginal([int(marginal)], nodes_list, [[int(node), int(state)]])
+            print(new_node.node_info())
+        else:
+            nodes_list = observe_evidence(nodes_list, [[int(node), int(state)]])
+            jpd, assignments_list = JPD_creator(nodes_list)
+            np.set_printoptions(precision=7, suppress=True)
+            print("JOINT PROBABILITIES, {}".format(jpd.get_names()))
+            norm = np.sum(jpd.probabilities)
+            jpd.probabilities = np.divide(jpd.probabilities, norm)
+            pprint(jpd.probabilities)
 
     else:
         show_factor(nodes_list)

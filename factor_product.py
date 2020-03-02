@@ -79,7 +79,6 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
     # change the for loop for a idx_a's length
     for i in range(len(index_a)):
 
-        # TODO fix indexing here, it seems like its giving all the same values no matter what
         # print("i", i)
         # print("index used for a",index_a[i])
         prob_a = float(node_a.probabilities[index_a[i]])
