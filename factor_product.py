@@ -4,6 +4,7 @@ import numpy as np
 from Nodes_ import Node
 
 
+
 """"Takes two Factors at a time and returns the resusltant joint probability distribution for the two of them.
     This function does not need to be called multiple times if you want to create a a JPD for
      a larger network. Use factorJointDistribution to do it automatically."""
@@ -11,6 +12,8 @@ from Nodes_ import Node
 def getting_joint_val(node_a, node_b): # we are returning proper nodes on this one now, so no need to all the workarounds to enter the factor
 
     union = np.union1d(node_a.variables, node_b.variables)
+    # print("a and b variables")
+    # print(node_a.variables, node_b.variables)
     union = list(union)
 
     map_a = [union.index(i) for i in node_a.variables]
@@ -79,13 +82,20 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
     # change the for loop for a idx_a's length
     for i in range(len(index_a)):
 
-        # print("i", i)
         # print("index used for a",index_a[i])
-        prob_a = float(node_a.probabilities[index_a[i]])
+        prob_a = node_a.probabilities[index_a[i]]
         # print("prob_a", prob_a)
-        prob_b = float(node_b.probabilities[index_b[i]])
+        prob_b = node_b.probabilities[index_b[i]]
         # print("index used for b", index_b[i])
         # print("prob_b", prob_b)
         comb.probabilities[i] = prob_a * prob_b
+        print("another calc")
+
+
+
+
+
+
+
 
     return comb, assignments

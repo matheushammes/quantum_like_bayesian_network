@@ -4,7 +4,6 @@ import numpy.matlib as npm
 """"Converts an assignment A (eg.: [1 0 1]), over variables with cardinality
     D (eg.:[2 3 2]) into an index of the probabilities factor of the factor that 
     is being evaluated
-
     example: D = [2 3 2] and you can assign each cardinality value to whatever suits your purpose:
              A = [1 0 1], returning the index created for this specific case"""
 
@@ -39,3 +38,5 @@ def assignment_to_index(A, D):  # A is the assignment and D is the cardinality
             idx += 1
 
         return result[0]
+
+# assignment_to_index([1,1,0], [2,2,3])

@@ -60,6 +60,10 @@ def factor_marginalization(a, v):  # A is a factor with var, card and val; V is 
     #     index += 1
 
     index_b = assignment_to_index(assignments[:, map_b], b.cardinality)
+    print("example")
+    print(assignments[:, map_b])
+    print(b.cardinality)
+    print(index_b)
 
     # print("this is index b")
     # print(index_b)
@@ -68,11 +72,11 @@ def factor_marginalization(a, v):  # A is a factor with var, card and val; V is 
 
     b.probabilities = list(b.probabilities)
     for i in range(len(index_b)):
-        b.probabilities[index_b[i]] = float(b.probabilities[index_b[i]]) + float(a.probabilities[i])
+        b.probabilities[index_b[i]] = b.probabilities[index_b[i]] + a.probabilities[i]
 
         # print("bprob index b [i]")
         # print(b.probabilities[index_b[i]])
-        #
+
         # print("aprob index i]")
         # print(a.probabilities[i])
         # print("final b")
