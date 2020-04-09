@@ -81,7 +81,6 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
 
     # change the for loop for a idx_a's length
     for i in range(len(index_a)):
-
         # print("index used for a",index_a[i])
         prob_a = node_a.probabilities[index_a[i]]
         # print("prob_a", prob_a)
@@ -89,7 +88,7 @@ def getting_joint_val(node_a, node_b): # we are returning proper nodes on this o
         # print("index used for b", index_b[i])
         # print("prob_b", prob_b)
         comb.probabilities[i] = prob_a * prob_b
-        print("another calc")
+
 
 
 

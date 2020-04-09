@@ -17,15 +17,20 @@ def assignment_to_index(A, D):  # A is the assignment and D is the cardinality
 
     if np.any(np.array(np.shape(A)) == 1):
 
-        final = []
         A = np.array(A)
+        final = np.multiply(np.cumprod(D), (A.transpose()) - 1) + 1
 
-        for i in A:
-            i = i.astype(int)
-            result = sum(np.cumprod(D) * (i.transpose()))
-            final.append(result)
 
-        return final
+
+        # for i in A:
+        #     i = i.astype(int)
+        #     result = sum(np.cumprod(D) * (i.transpose()))
+        #     final.append(result)
+        print("all values of i (or do we even need a loop here)")
+        print(final)
+
+        return final[0].astype(int)
+
 
     else:
         result = np.sum((np.dot(npm.repmat(np.cumprod(D), int(np.shape(A[0])[0]), 1), A.transpose()), 1)) - 1
@@ -39,4 +44,12 @@ def assignment_to_index(A, D):  # A is the assignment and D is the cardinality
 
         return result[0]
 
-# assignment_to_index([1,1,0], [2,2,3])
+#
+# function I = AssignmentToIndex(A, D)
+#
+# D = D(:)'; % ensure that D is a row vector
+# if (any(size(A) == 1)),
+#     I = cumprod([1, D(1:end - 1)]) * (A(:) - 1) + 1;
+# else
+#     I = sum(repmat(cumprod([1, D(1:end - 1)]), size(A, 1), 1) .* (A - 1), 2) + 1;
+# end
