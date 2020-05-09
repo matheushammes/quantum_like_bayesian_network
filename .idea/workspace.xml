@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87a910a4-a618-4ae5-bdd0-05c8ecc2e211" name="Default Changelist" comment="">
+    <list default="true" id="87a910a4-a618-4ae5-bdd0-05c8ecc2e211" name="Default Changelist" comment="Modded for better visualisation.">
+      <change beforePath="$PROJECT_DIR$/.idea/Quantun_Like_Bayesian.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Quantun_Like_Bayesian.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nodes_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Nodes_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_to_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_to_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute_marginal.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute_marginal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convert_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factor_marginalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/factor_marginalization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/factor_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/factor_product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index_to_assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/index_to_assignment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start_.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +21,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start_.py">
+        <entry file="file://$PROJECT_DIR$/assignment_to_index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="227">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/child.net">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nodes_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index_to_assignment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/convert_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2516">
-              <caret line="149" column="35" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
+            <state relative-caret-position="459">
+              <caret line="120" column="181" selection-start-line="120" selection-start-column="181" selection-end-line="120" selection-end-column="181" />
               <folding>
                 <element signature="e#395#431#0" expanded="true" />
               </folding>
@@ -43,10 +75,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nodes_.py">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="1955">
+              <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -54,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/factor_product.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -64,67 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compute_joint_distribution.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/factor_marginalization.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compute_marginal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index_to_assignment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assignment_to_index.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/observe_evidence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="731">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -159,6 +134,10 @@
       <find>example</find>
       <find>full</find>
       <find>floa</find>
+      <find>loop</find>
+      <find>assignment_to</find>
+      <find>index_to</find>
+      <find>state_names</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,19 +155,21 @@
         <option value="$PROJECT_DIR$/observe_evidence.py" />
         <option value="$PROJECT_DIR$/start_.py" />
         <option value="$PROJECT_DIR$/compute_marginal.py" />
+        <option value="$PROJECT_DIR$/factor_marginalization.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
         <option value="$PROJECT_DIR$/assignment_to_index.py" />
         <option value="$PROJECT_DIR$/index_to_assignment.py" />
         <option value="$PROJECT_DIR$/convert_network.py" />
-        <option value="$PROJECT_DIR$/factor_marginalization.py" />
         <option value="$PROJECT_DIR$/factor_product.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1667" />
-    <option name="y" value="-398" />
-    <option name="width" value="985" />
-    <option name="height" value="1030" />
+    <option name="x" value="453" />
+    <option name="y" value="-9" />
+    <option name="width" value="1182" />
+    <option name="height" value="1236" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,7 +183,12 @@
           <expand>
             <path>
               <item name="quantum_like_bayesian_network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quantum_like_bayesian_network" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="quantum_like_bayesian_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
@@ -213,6 +199,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -235,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.start_">
+  <component name="RunManager" selected="Python.index_to_assignment">
     <configuration name="assignment_to_index" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Quantun_Like_Bayesian" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,6 +289,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Quantun_Like_Bayesian" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="start_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Quantun_Like_Bayesian" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,9 +335,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.start_" />
         <item itemvalue="Python.index_to_assignment" />
         <item itemvalue="Python.assignment_to_index" />
+        <item itemvalue="Python.start_" />
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.observe_evidence" />
       </list>
     </recent_temporary>
@@ -351,11 +361,29 @@
       <workItem from="1583385884180" duration="36426000" />
       <workItem from="1583565086648" duration="13866000" />
       <workItem from="1583748015078" duration="612000" />
+      <workItem from="1583900818375" duration="8535000" />
+      <workItem from="1583911265154" duration="6121000" />
+      <workItem from="1584697449739" duration="1397000" />
+      <workItem from="1585047198951" duration="474000" />
+      <workItem from="1585118784833" duration="1581000" />
+      <workItem from="1585505365366" duration="20000" />
+      <workItem from="1585722997256" duration="15000" />
+      <workItem from="1586017677888" duration="61573000" />
+      <workItem from="1588560179156" duration="8455000" />
+      <workItem from="1588988595484" duration="359000" />
     </task>
+    <task id="LOCAL-00001" summary="vectorizing loops">
+      <created>1586434879539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586434879539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193176000" />
+    <option name="totallyTimeSpent" value="281706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,14 +395,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="-381" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2272118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19240098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" weight="0.2960993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.27659574" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,7 +413,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004042" side_tool="true" weight="0.2960993" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32978722" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32978722" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.33156028" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -422,12 +451,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="vectorizing loops" />
+    <option name="LAST_COMMIT_MESSAGE" value="vectorizing loops" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Quantun_Like_Bayesian$observe_evidence.coverage" NAME="observe_evidence Coverage Results" MODIFIED="1580457455763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Quantun_Like_Bayesian$start_.coverage" NAME="start_ Coverage Results" MODIFIED="1580979085794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$assignment_to_index.coverage" NAME="assignment_to_index Coverage Results" MODIFIED="1583571094016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$start_.coverage" NAME="start_ Coverage Results" MODIFIED="1583741370246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$index_to_assignment.coverage" NAME="index_to_assignment Coverage Results" MODIFIED="1583579110534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$start_.coverage" NAME="start_ Coverage Results" MODIFIED="1586446173585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$assignment_to_index.coverage" NAME="assignment_to_index Coverage Results" MODIFIED="1586695827209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1584698149405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/quantum_like_bayesian_network$index_to_assignment.coverage" NAME="index_to_assignment Coverage Results" MODIFIED="1586976312155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/monitor_assigments.py">
@@ -473,9 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/set_assigment_value.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/asia.net">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -490,43 +521,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/convert_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="149" column="35" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
-          <folding>
-            <element signature="e#395#431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nodes_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compute_joint_distribution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/factor_marginalization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
+        <state relative-caret-position="315">
           <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -536,7 +533,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/compute_marginal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="482">
           <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -544,40 +541,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_to_assignment.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="36" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_to_index.py">
+    <entry file="file://$PROJECT_DIR$/set_assigment_value.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compute_joint_distribution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barley.net">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/observe_evidence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="731">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/child.net">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_to_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nodes_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_to_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="120" column="181" selection-start-line="120" selection-start-column="181" selection-end-line="120" selection-end-column="181" />
+          <folding>
+            <element signature="e#395#431#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/factor_product.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>

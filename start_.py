@@ -29,17 +29,18 @@ def read_network(path, isquantum):
     network = open(path, "r").read()
     variable_each, node_dict, values, node_names = convert_network.file_scrapper(network)
     nodes_list = []
+    print(values)
 
     print("variable_each", variable_each)
 
     for name, variables in zip(node_names, variable_each):
+        print(name, variables)
 
         variables.reverse()
         variables.insert(0, variables[len(variables) - 1])
         variables = variables[0:(len(variables) - 1)]
-        # if isquantum:
-        #     probabilities = [np.sqrt(float(i)) for i in values.get(name)["val"]]
-        # else:
+        state_names = []
+        state_names.append(values.get(name)["state_names"])
         probabilities = [float(i) for i in values.get(name)["val"]]
         cardinality = []
         cardinality.append(values.get(name)["card"])
@@ -47,7 +48,7 @@ def read_network(path, isquantum):
             name_par = node_dict.get(var)
             cardinality.append(values.get(name_par)["card"])
 
-        nodes = Node(name, probabilities, cardinality, variables)
+        nodes = Node(name, probabilities, state_names,cardinality, variables)
         nodes_list.append(nodes)
 
     return nodes_list
@@ -74,7 +75,7 @@ def show_factor(factor):
 if __name__ == "__main__":
 
     nodes_list = check_input()
-    # print(nodes_list)
+    print(nodes_list)
     show_factor(nodes_list)
     print("reminder")
     [print("node name:", Node.get_names(i), "node index:", nodes_list.index(i), "states:", i.cardinality[0], "\n probs:", Node.get_probabilities(i)) for i in
