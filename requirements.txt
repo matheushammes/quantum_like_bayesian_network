@@ -1,6 +1,6 @@
 decorator==4.4.0
 joblib==0.13.2
-numpy==1.17.0
+numpy==1.22.0
 pandas==0.25.1
 pomegranate==0.11.0
 python-dateutil==2.8.0
